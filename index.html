@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html>
 <head>
     <title>DBanks Cosmetics Store - Kampala</title>
@@ -78,55 +78,11 @@
             font-weight: bold;
         }
 
-        /* ORDER FORM */
-        form {
-            max-width: 400px;
-            margin: auto;
-            text-align: left;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border: none;
-        }
-
-        .submit-btn {
-            background: gold;
-            color: black;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
         footer {
             background: #111;
             padding: 20px;
             color: gold;
         }
-
-        /* Floating WhatsApp */
-        .floating-whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            padding: 15px 18px;
-            border-radius: 50%;
-            font-size: 20px;
-            text-decoration: none;
-        }
-
-        /* Social links */
-        .social-links a {
-            color: gold;
-            margin: 10px;
-            font-size: 18px;
-            text-decoration: none;
-        }
-
     </style>
 </head>
 
@@ -134,10 +90,10 @@
 
 <header>
     <h1>DBanks Cosmetics Store</h1>
-    <p>Luxury Beauty Products | Nakivubo green,Kampala</p>
+    <p>Luxury Beauty Products | Kampala</p>
 </header>
 
-<!-- SLIDESHOW -->
+<!-- SLIDESHOW SECTION -->
 <div class="slideshow">
     <img class="slides" src="banner1.jpg">
     <img class="slides" src="banner2.jpg">
@@ -153,11 +109,61 @@
             <img src="lipstick.jpg">
             <h3>Matte Lipstick</h3>
             <p class="price">UGX 25,000</p>
-            <a class="btn" href="https://wa.me/+256703381018?text=Hello%20I%20want%20to%20order%20Matte%20Lipstick">
-                Order
+            <a class="btn" href="https://wa.me/2567XXXXXXXX?text=Hello%20DBanks%20Cosmetics,%20I%20would%20like%20to%20order%20Matte%20Lipstick">
+                Order on WhatsApp
             </a>
         </div>
 
         <div class="product">
             <img src="foundation.jpg">
+            <h3>Flawless Foundation</h3>
+            <p class="price">UGX 45,000</p>
+            <a class="btn" href="https://wa.me/2567XXXXXXXX?text=Hello%20DBanks%20Cosmetics,%20I%20would%20like%20to%20order%20Flawless%20Foundation">
+                Order on WhatsApp
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="serum.jpg">
+            <h3>Glow Face Serum</h3>
+            <p class="price">UGX 35,000</p>
+            <a class="btn" href="https://wa.me/2567XXXXXXXX?text=Hello%20DBanks%20Cosmetics,%20I%20would%20like%20to%20order%20Glow%20Face%20Serum">
+                Order on WhatsApp
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <h2 style="color:gold;">Contact Us</h2>
+    <p>📍 Kampala, Uganda</p>
+    <p>🕒 Monday – Saturday (9am – 7pm)</p>
+    <p>📲 Call/WhatsApp: +256 7XX XXX XXX</p>
+</div>
+
+<footer>
+    © 2026 DBanks Cosmetics Store | All Rights Reserved
+</footer>
+
+<!-- JAVASCRIPT FOR SLIDESHOW -->
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slides");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+</script>
+
+</body>
+</html>
+
 
